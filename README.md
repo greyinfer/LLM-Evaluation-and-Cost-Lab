@@ -7,7 +7,7 @@
   <img alt="Providers" src="https://img.shields.io/badge/providers-Gemini%20%7C%20Claude-2E7D5B">
   <img alt="Data" src="https://img.shields.io/badge/data-fictional-8DB19E">
   <img alt="Licence" src="https://img.shields.io/badge/licence-MIT-E0A42B">
-  <a href="https://colab.research.google.com/github/YOUR-USERNAME/llm-evaluation-and-cost-lab/blob/main/notebooks/colab_quickstart.ipynb"><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+  <a href="https://colab.research.google.com/github/greyinfer/llm-evaluation-and-cost-lab/blob/main/notebooks/colab_quickstart.ipynb"><img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a>
 </p>
 
 > **One question drives this project:** can an AI workflow cost less without getting worse? This lab measures the answer instead of guessing it.
