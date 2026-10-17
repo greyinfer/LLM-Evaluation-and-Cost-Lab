@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#5D6D67" stroke-width="1.8" stroke-linecap="round"/></marker>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#B44E39" stroke-width="1.8" stroke-linecap="round"/></marker>
+  </defs>
+  <rect width="1200" height="500" rx="24" fill="#FFFFFF"/>
+  <text x="40" y="48" font-size="22" font-weight="700" fill="#16294A">Inside the optimised strategy: one task's journey</text>
+  <text x="40" y="74" font-size="14" fill="#45554F">Each step names the agentic design pattern it uses.</text>
+  <g font-size="14">
+    <!-- main row nodes -->
+    <rect x="30" y="150" width="120" height="70" rx="12" fill="#EDF3EF" stroke="#D6E0DA"/><text x="90" y="182" text-anchor="middle" font-weight="700" fill="#173A30">Task</text><text x="90" y="201" text-anchor="middle" font-size="12" fill="#45554F">from the test set</text>
+    <rect x="180" y="150" width="140" height="70" rx="12" fill="#FFFFFF" stroke="#2E7D5B" stroke-width="1.6"/><text x="250" y="182" text-anchor="middle" font-weight="700" fill="#173A30">Seen before?</text><text x="250" y="201" text-anchor="middle" font-size="12" fill="#45554F">response cache</text>
+    <rect x="350" y="150" width="150" height="70" rx="12" fill="#FFFFFF" stroke="#2E7D5B" stroke-width="1.6"/><text x="425" y="182" text-anchor="middle" font-weight="700" fill="#173A30">Retrieve</text><text x="425" y="201" text-anchor="middle" font-size="12" fill="#45554F">relevant sections only</text>
+    <rect x="530" y="150" width="120" height="70" rx="12" fill="#16294A"/><text x="590" y="182" text-anchor="middle" font-weight="700" fill="#FFFFFF">Router</text><text x="590" y="201" text-anchor="middle" font-size="12" fill="#C9D6E8">simple or complex?</text>
+    <rect x="690" y="100" width="150" height="62" rx="12" fill="#E2EEE7" stroke="#8DB19E"/><text x="765" y="128" text-anchor="middle" font-weight="700" fill="#173A30">Cheaper model</text><text x="765" y="147" text-anchor="middle" font-size="12" fill="#45554F">capped, no extra thinking</text>
+    <rect x="690" y="208" width="150" height="62" rx="12" fill="#2E7D5B"/><text x="765" y="236" text-anchor="middle" font-weight="700" fill="#FFFFFF">Stronger model</text><text x="765" y="255" text-anchor="middle" font-size="12" fill="#E2EEE7">capped answer length</text>
+    <rect x="880" y="150" width="130" height="70" rx="12" fill="#FFFFFF" stroke="#E0A42B" stroke-width="1.6"/><text x="945" y="182" text-anchor="middle" font-weight="700" fill="#173A30">Valid format?</text><text x="945" y="201" text-anchor="middle" font-size="12" fill="#45554F">guardrail check</text>
+    <rect x="1040" y="150" width="130" height="70" rx="12" fill="#16294A"/><text x="1105" y="182" text-anchor="middle" font-weight="700" fill="#FFFFFF">Score and log</text><text x="1105" y="201" text-anchor="middle" font-size="12" fill="#C9D6E8">quality, tokens, time</text>
+    <!-- side branch nodes -->
+    <rect x="180" y="300" width="140" height="62" rx="12" fill="#FBF0DA" stroke="#E0A42B"/><text x="250" y="328" text-anchor="middle" font-weight="700" fill="#8A5A06">Reuse answer</text><text x="250" y="347" text-anchor="middle" font-size="12" fill="#45554F">zero tokens</text>
+    <rect x="880" y="300" width="130" height="62" rx="12" fill="#F8E3DD" stroke="#B44E39"/><text x="945" y="328" text-anchor="middle" font-weight="700" fill="#8E3A29">Repair once</text><text x="945" y="347" text-anchor="middle" font-size="12" fill="#45554F">says what was wrong</text>
+  </g>
+  <!-- main arrows -->
+  <g fill="none" stroke="#5D6D67" stroke-width="1.8">
+    <path d="M150 185H176" marker-end="url(#a)"/>
+    <path d="M320 185H346" marker-end="url(#a)"/>
+    <path d="M500 185H526" marker-end="url(#a)"/>
+    <path d="M650 175 C670 175 670 131 686 131" marker-end="url(#a)"/>
+    <path d="M650 195 C670 195 670 239 686 239" marker-end="url(#a)"/>
+    <path d="M840 131 C860 131 860 175 876 175" marker-end="url(#a)"/>
+    <path d="M840 239 C860 239 860 195 876 195" marker-end="url(#a)"/>
+    <path d="M1010 185H1036" marker-end="url(#a)"/>
+    <path d="M250 220V296" marker-end="url(#a)"/>
+    <path d="M250 362 V388 H1105 V224" marker-end="url(#a)"/>
+    <path d="M945 220V296" stroke="#B44E39" marker-end="url(#ac)"/>
+    <path d="M880 345 C820 345 790 300 780 274" stroke="#B44E39" stroke-dasharray="5 4" marker-end="url(#ac)"/>
+  </g>
+  <g font-size="12" fill="#45554F">
+    <text x="258" y="262">yes</text><text x="606" y="132">simple</text><text x="598" y="250">complex</text>
+    <text x="953" y="262" fill="#8E3A29">invalid</text>
+    <text x="764" y="300" fill="#8E3A29" text-anchor="end">still invalid on the</text><text x="764" y="316" fill="#8E3A29" text-anchor="end">cheap model: escalate</text>
+  </g>
+  <!-- pattern chips -->
+  <g font-size="12" font-weight="600">
+    <rect x="30" y="410" width="1140" height="1" fill="#D6E0DA"/>
+    <text x="30" y="440" font-size="12" font-weight="700" fill="#45554F" letter-spacing="1.2">PATTERNS</text>
+    <rect x="120" y="424" width="200" height="26" rx="13" fill="#E2EEE7"/><text x="220" y="442" text-anchor="middle" fill="#226347">Resource-aware optimisation</text>
+    <rect x="330" y="424" width="150" height="26" rx="13" fill="#E2EEE7"/><text x="405" y="442" text-anchor="middle" fill="#226347">Knowledge retrieval</text>
+    <rect x="490" y="424" width="90" height="26" rx="13" fill="#E2EEE7"/><text x="535" y="442" text-anchor="middle" fill="#226347">Routing</text>
+    <rect x="590" y="424" width="110" height="26" rx="13" fill="#E2EEE7"/><text x="645" y="442" text-anchor="middle" fill="#226347">Guardrails</text>
+    <rect x="710" y="424" width="240" height="26" rx="13" fill="#F8E3DD"/><text x="830" y="442" text-anchor="middle" fill="#8E3A29">Exception handling and recovery</text>
+    <rect x="960" y="424" width="210" height="26" rx="13" fill="#E7ECF4"/><text x="1065" y="442" text-anchor="middle" fill="#16294A">Evaluation and monitoring</text>
+  </g>
+  <text x="30" y="478" font-size="12" fill="#45554F">Prompt caching is also used: stable instructions come first, so providers can reuse them across calls.</text>
+</svg>
